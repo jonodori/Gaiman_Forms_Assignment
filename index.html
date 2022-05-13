@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery Forms</title>
+</head>
+<body>
+    <h1>Movies</h1>
+
+    <input type="text" placeholder="Movie Name" id="movie-name" />
+    <input type="text" placeholder="Release Year" id="movie-year"
+
+    <!-- Select a movie genre -->
+    <select id="movie-genre">
+        <option>Action</option>
+        <option>Adventure</option>
+        <option>Sci Fi</option>
+        <option>Comedy</option>
+        <option>Timeless Classic</option>
+    </select>
+
+    <button id="submit-btn">Add Movie</button>
+
+    <table>
+        <thead>
+            <!-- Header row -->
+            <tr>
+                <th>Name</th>
+                <th>Genre</th>
+                <th>Released Year</th>
+                <th>Flag</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="movie-table">
+            <!-- Data Rows (list of movies) -->
+            <tr>
+                <td>Logan</td>
+                <td>Action</td>
+                <td>
+                    <button class="delete-btn">
+                        🦖 Delete Me                       
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>The Princess Bride</td>
+                <td>Timeless Classic</td>
+                <td>
+                    <button class="delete-btn">
+                        🦖 Delete Me
+                    </button>
+                </td>
+            </tr>
+            <!-- 
+            👇 What we want to append() to the DOM
+            <tr>
+                <td>Space Balls</td>
+                <td>Timeless Classic</td>
+            </tr>    
+             -->
+        </tbody>
+    </table>
+</body>
+</html>
